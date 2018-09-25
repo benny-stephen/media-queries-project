@@ -1,50 +1,5 @@
 
 
-/* Desktop (tablets, 768px and up) */
-@media screen and (min-width:768px) {
-    body.a {
-        background: #fff;
-        display: flex;
-        line-height: 1.4;
-    }
-    .main {
-        float: left;
-        width: 70%;
-    }
-    .sub-section {
-        float: left;
-        width: 30%;
-    }
-    .nav-links {
-        display: inline-block;
-        padding: 0;
-        background-color: transparent;
-        float: right;
-    }
-    .hidden-on-desktop {
-        display: none;
-    }
-    h1 {
-        text-align: left;
-        float: left;
-        margin: 0;
-        font-size: 3em;
-    }
-    li {
-        background-color: transparent;
-    }
-
-}
-
-/* Mobile */
-/*body a {
-     color: black;
-
-}
-
-a {
-    color: blue;
-}*/
 
 .alert-info {
     background-color: rgb(206, 255,	255);
@@ -63,15 +18,14 @@ a {
     text-decoration: none;
 }
 
-.hidden-on-desktop {
-    color: black;
-    text-decoration: none;
-}
+/*.hidden-on-desktop {*/
+    /*color: black;*/
+    /*text-decoration: none;*/
+/*}*/
 
 h1 {
     text-align: center;
-    width: 100%;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 nav {
@@ -93,35 +47,32 @@ ul {
     padding: 0;
     color: blue;
     position: relative;
+    width: 100%;
 }
 
 li {
     list-style-type: none;
     text-decoration: underline;
     width: 100%;
-    padding: 1em 0;
+    padding: 10px;
     margin-top: 20px;
-    background-color: rgb(204	204	204	);
-
+    background-color: rgb(204, 204,	204);
 }
 
 img {
     position: center;
     margin-top: 10px;
-    padding: 0px;
     width: 100%;
 }
 
 .sub-section {
     padding: 0px;
     margin-top: 20px;
-
     float: left;
 }
 
 footer {
     margin: 100px 0 0 0;
-
     width: 100%;
     float: left;
     display: inline-block;
@@ -157,4 +108,48 @@ footer>p {
     float: right;
     margin-top: 60px;
     position: relative;
+}
+
+/* Desktop (tablets, 768px and up) */
+@media screen and (min-width:768px) {
+    body.a {
+        background: #fff;
+        line-height: 1.4;
+    }
+/*    .main {
+        float: left;
+        width: 70%;
+    }*/
+    .sub-section {
+        float: left;
+        width: 30%;
+    }
+    .nav-links {
+        padding: 0;
+        float: right;
+    }
+    .nav-links>li {
+        all: unset;
+        float: left;
+        background-color: transparent;
+        padding: 1em
+    ;
+    }
+
+    .hidden-on-desktop {
+        display: none;
+    }
+    h1 {
+        text-align: left;
+        font-size: 3em;
+        position: relative;
+        float: left;
+        display: inline-block;
+    }
+
+    .header-img {
+        width: 100%;
+    }
+
+
 }
