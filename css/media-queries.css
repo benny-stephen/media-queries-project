@@ -16,7 +16,7 @@
         width: 30%;
     }
     .nav-links {
-        display: inline;
+        display: inline-block;
         padding: 1.5em;
         background-color: white;
         float: right;
@@ -97,13 +97,16 @@ img {
 .sub-section {
     padding: 0px;
     margin-top: 20px;
+
     float: left;
 }
 
 footer {
-    margin-top: 100px;
+    margin: 100px 0 0 0;
+
     width: 100%;
     float: left;
+    display: inline-block;
 }
 
 section {
@@ -118,6 +121,23 @@ body {
     padding: 0;
     float: left;
 }
+
 #social-media-links {
+    width: 50px;
+    margin: 0px;
+
+    padding: 0px;
+    float: right;
+    display: inline-block;
+}
+.twitter {
+
+}
+.facebook {
+
+
+}
+.instragram {
+
 
 }
