@@ -1,6 +1,6 @@
-/*TEST*/
 
-/* Small devices (tablets, 768px and up) */
+
+/* Desktop (tablets, 768px and up) */
 @media screen and (min-width:768px) {
     body.a {
         background: #fff;
@@ -17,13 +17,25 @@
     }
     .nav-links {
         display: inline-block;
-        padding: 1.5em;
-        background-color: white;
+        padding: 0;
+        background-color: transparent;
         float: right;
+    }
+    .hidden-on-desktop {
+        display: none;
+    }
+    h1 {
+        text-align: left;
+        float: left;
+        margin: 0;
+        font-size: 3em;
+    }
+    li {
+        background-color: transparent;
     }
 }
 
-
+/* Mobile */
 body a {
      color: black;
 
@@ -32,7 +44,7 @@ body a {
 a {
     color: blue;
 }
-/*testing*/
+
 .alert-info {
     background-color: rgb(206, 255,	255);
     color: black;
@@ -125,19 +137,25 @@ body {
 #social-media-links {
     width: 50px;
     margin: 0px;
+    text-align: right;
 
-    padding: 0px;
     float: right;
     display: inline-block;
 }
 .twitter {
+    padding: 0;
+    margin: 0;
+    display: block;
 
 }
 .facebook {
-
+    padding: 0;
+    margin: 0;
+    display: block;
 
 }
 .instragram {
-
-
+    padding: 0;
+    margin: 0;
+    display: block;
 }
